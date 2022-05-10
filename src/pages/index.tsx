@@ -22,7 +22,7 @@ const Home: NextPage = () => {
       </Head>
       <div className={`flex flex-col w-full h-full bg-slate-700`}>
             <Navbar title="Ranking de engajamento dos Políticos" subtitle="Geral" />
-            <ToggleButton theme={theme} switchTheme={switchTheme} />
+            
             <SideBarButton />
             <SideBarInfo />
             <Content>

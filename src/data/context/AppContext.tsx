@@ -8,7 +8,8 @@ interface AppContextProps {
 
     politician?: string
     elo?: string
-    setPoliticianInfo?: () => void
+    setPoliticianInfo?: (p) => void
+    politicianInfo?: any
     eloInfo?: () => void
 }
 
@@ -40,12 +41,12 @@ export function AppProvider(props) {
 
     useEffect(() => {
         const themeSaved = localStorage.getItem('theme')
-        setTheme(themeSaved)
+        setTheme(themeSaved!)
     }, [])
 
     useEffect(() => {
         const SidebarInfoSaved = localStorage.getItem('showSidebarInfo')
-        setShowSidebarInfo(SidebarInfoSaved)
+        setShowSidebarInfo(SidebarInfoSaved!)
     }, [])
 
     return (
