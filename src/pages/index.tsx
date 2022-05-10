@@ -29,7 +29,7 @@ const Home: NextPage = () => {
               <div className={`flex flex-col`}>
                 <Politicians count={count} setCount={setCount} />
                 <div className="w-full flex justify-center items-center">
-                  <button type="button" className="w-full h-full block text-slate-100 text-lg font-bold bg-sky-500/25 hover:bg-sky-500/50 p-2" onClick={() => setCount(count + 3)}>+</button>
+                  <button type="button" className="w-full h-full block text-slate-100 text-lg font-bold bg-sky-500/25 hover:bg-sky-500/50 p-2">+</button>
                 </div>
               </div>
             </Content>
